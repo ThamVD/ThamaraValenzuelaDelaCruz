@@ -1,0 +1,281 @@
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+	
+	box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   padding-top: 330px;
+   transition: padding-top 0.5s ease;
+}
+
+body {
+	background: url("../imagenes/fondo.jpg");
+}
+
+a{
+	text-decoration: none;
+}
+
+header {
+	background: url("../imagenes/cuadrado.png");
+	width: 100%;
+	height: 20%;
+	background:#FBC039;
+	position: fixed;
+	top:0;
+	text-align: center;
+	overflow: hidden;
+	transition:all 0.5s ease;
+	z-index: 200;
+}
+@font-face{
+	font-family:Bebas Neue;
+	src: url("../Fonts/BebasNeue-Regular.otf");
+}
+
+@font-face{
+	font-family:Allerta;
+	src: url("../Fonts/AllertaStencil-Regular.ttf");
+}
+
+
+header h1 {
+	font-family:"Bebas Neue";
+	font-size: 60px;
+	letter-spacing:8px;
+	word-spacing: 3px;
+	margin-top: 20px;
+	margin-left: 14%;
+	margin-right: 14%;
+	position: center;
+	transition: all 0.3s ease;
+}
+
+.Thamara{
+	color: #FFF;
+}
+
+header nav{
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	line-height: 35px;
+	width: 100%;
+	background: #FBC039;
+
+}
+
+header nav a{
+	display: inline-block;
+}
+
+body.sticky-header{
+	padding-top: 180px;
+}
+
+body.sticky-header header nav{
+	background: #FBA92C;
+}
+
+body.sticky-header header{
+	height:60px;
+
+}
+
+body.sticky-header header h1{
+	transform: scale(0,0);
+	
+}
+
+p{
+	margin-bottom: 2rem;
+	line-height: 2;
+	color: #000;
+}
+.wrapper{
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+section{
+	margin:10px;
+	padding: 20px;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.button {
+
+	margin-top: 10px;
+	font-family: "Allerta";
+	position: center;
+	display: inline-block;
+	background color: transparent;
+	color: #864800;
+	width: 140px;
+	height: 40px;
+	text-decoration: none;
+	overflow: hidden;
+	transition:all 500ms ease;
+	border: 2px solid #fff;
+	z-index:0;
+	border-radius:4px;
+	position: relative;
+	
+}
+
+.button:before{
+	content: '';
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	margin: auto;
+	background-color: #fff;
+	transition: all 500ms ease;
+	z-index: -1;
+	width: 0;
+	height: 100%;
+}
+
+.button:hover{
+	color: #864800;
+}
+
+.button:hover:before{
+	width: 100%;
+}
+
+@font-face{
+	font-family:Barlow;
+	src: url("../Fonts/Barlow-ThinItalic.ttf");
+}
+
+@font-face{
+	font-family:Boogaloo;
+	src: url("../Fonts/Boogaloo-Regular.ttf");
+}
+
+.wrap{
+	width: 1100px;
+	margin: 50px auto;
+	display:flex;
+	justify-content: center;
+	z-index: 1;
+}
+
+.tarjeta-wrap{
+	margin:10px;
+	-webkit-perspective:800;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 300px;
+	height: 350px;
+	background: #EAC274;
+	position:relative;
+	-webkit-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante{
+
+	background: #C4C4C4;
+}
+.adelante h2{
+	text-align: center;
+	font-family:"Boogaloo";
+	font-size: 60px;
+	margin-top: 30px;
+}
+
+.adelante img{
+	width: 240px;
+	align-items:center;
+	text-align: center;
+	justify-content: center;
+	padding: 15px;
+	margin-left: 30px;
+	
+
+}
+
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+
+}
+
+.atras{
+		transform:rotateY(180deg);
+		text-align: center;		
+}
+
+.atras p{
+	font-family:"Barlow";
+	font-size: 20px;
+}
+
+.atras h2{
+	color:#C8791C;
+	text-align: center;
+	font-family:"Boogaloo";
+	font-size: 60px;
+	margin-top: 30px;
+}
+
+.tarjeta-wrap:hover .tarjeta{
+
+		transform:rotateY(180deg);
+}
+h4{
+	text-align: center;
+	color: white;
+	font-family: "Bebas Neue";
+	font-size: 130px;
+	-webkit-text-fill-color: #EAC274;
+	-webkit-text-stroke: 0.5px;
+	-webkit-text-stroke-color:#C8791C;
+}
+
+.enlaces a{
+	background: #fff;
+	width: 240px;
+	height: 60px;
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 40px;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+
+.enlaces p{
+	margin-right: 20px;
+	margin-top: 10px;
+	float:right;
+	font-size: 20px;
+}
+.Final img{
+	position: center;
+	bottom: 0;
+	margin-left: 20%;
+
+}
